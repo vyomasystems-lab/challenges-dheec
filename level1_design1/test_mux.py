@@ -12,7 +12,7 @@ async def test_mux(dut):
     #sel1 = 5'b00000
     #inp00 = 0
     #inp11 = 1
-    dut.sel.value = 00000
+    dut.sel.value = 00001
     dut.inp0.value = 0
     dut.inp0.value = 1
     #dut.inp0.value = 02;
@@ -21,7 +21,7 @@ async def test_mux(dut):
 
     await Timer(1, units='ns')
 
-    assert dut.out.value == 0, f"Mux result is incorrect: {dut.X.value} != 0"
+    assert dut.out.value == 1, f"Mux result is incorrect: {dut.X.value} != 1"
 
     #for i in range(5):
     #    sel1  = random.randint(0, 31)
