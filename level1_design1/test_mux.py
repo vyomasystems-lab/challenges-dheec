@@ -20,6 +20,7 @@ async def test_mux(dut):
     await Timer(1, units='ns')
 
     assert dut.out.value == (1 or 0), f"Mux result is incorrect: {dut.out.value} != (1 or 0)"
+    print("tested the code for 2 select values");
 
     #for i in range(5):
     #    sel1  = random.randint(0, 31)
