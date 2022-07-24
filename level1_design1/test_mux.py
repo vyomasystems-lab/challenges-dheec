@@ -19,7 +19,7 @@ async def test_mux(dut):
 
     await Timer(1, units='ns')
 
-    assert dut.out.value == (1 or 0), f"Mux result is incorrect: {dut.X.value} != (1 or 0)"
+    assert dut.out.value == (1 or 0), f"Mux result is incorrect: {dut.out.value} != (1 or 0)"
 
     #for i in range(5):
     #    sel1  = random.randint(0, 31)
