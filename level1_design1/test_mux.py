@@ -10,14 +10,14 @@ async def test_mux(dut):
 
     cocotb.log.info('##### CTB: Develop your test here ########')
     
-    dut.sel.value = 0;
+    dut.sel.value = 00000;
     dut.inp0.value = 00;
     #dut.inp0.value = 01;
     #dut.inp0.value = 02;
     #dut.inp0.value = 03;
     #dut.inp0.value = 00;
 
-    await Timer(2, units='ns')
+    await Timer(1, units='ns')
 
     assert dut.out.value == 0, f"Mux result is incorrect: {dut.X.value} != 0"
 
