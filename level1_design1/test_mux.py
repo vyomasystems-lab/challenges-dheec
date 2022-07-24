@@ -12,7 +12,7 @@ async def test_mux(dut):
     #sel1 = 5'b00000
     #inp00 = 0
     #inp11 = 1
-    dut.sel.value = 00000
+    dut.sel.value = 5'b00000
     dut.inp0.value = 0
     dut.inp0.value = 1
     #dut.inp0.value = 02;
