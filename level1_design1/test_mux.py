@@ -12,11 +12,11 @@ async def test_mux(dut):
     sel1=1
     for i in range(4):
         dut.sel.value = ~sel
-        await Timer(1, units='ns')
+        await Timer(2, units='ns')
         dut.inp0.value = 0
-        await Timer(1, units='ns')
+        await Timer(2, units='ns')
         dut.inp1.value = 1
-        await Timer(1, units='ns')
+        await Timer(2, units='ns')
     #dut.inp0.value = 02;
     #dut.inp0.value = 03;
     #dut.inp0.value = 00;
