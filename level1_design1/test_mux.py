@@ -51,7 +51,7 @@ async def test_mux(dut):
     await Timer(2, units='ns')
 
     assert dut.out.value == inp6, f"Mux result is incorrect: {dut.out.value} != {EXP}".format(
-            A=int(dut.inp5.value), B=int(dut.out.value),  EXP=inp5)
+            A=int(dut.inp5.value), B=int(dut.out.value),  EXP=inp6)
     
     
     
