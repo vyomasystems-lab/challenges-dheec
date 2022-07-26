@@ -11,7 +11,7 @@ async def test_mux(dut):
     cocotb.log.info('##### CTB: Develop your test here ########')
     sel1=1
     #for i in range(4):
-    dut.sel.value = 5
+    dut.sel.value = 6
     await Timer(2, units='ns')
     #dut.inp0.value = 0
     #await Timer(2, units='ns')
@@ -19,8 +19,8 @@ async def test_mux(dut):
     #dut.inp2.value = 2
     #dut.inp3.value = 3
     #dut.inp4.value = 0
-    dut.inp5.value = 1
-    #dut.inp6.value = 2
+    #dut.inp5.value = 1
+    dut.inp6.value = 2
     #dut.inp7.value = 3
     #dut.inp8.value = 0
     #dut.inp9.value = 1
@@ -46,11 +46,11 @@ async def test_mux(dut):
     #dut.inp29.value = 1
     #dut.inp30.value = 2
     
-    A = dut.inp5.value
+    A = dut.inp6.value
     B = dut.out.value
     await Timer(2, units='ns')
 
-    assert dut.out.value == 1, f"Mux result is incorrect: {dut.out.value} != {1}".format(
+    assert dut.out.value == inp6, f"Mux result is incorrect: {dut.out.value} != {EXP}".format(
             A=int(dut.inp5.value), B=int(dut.out.value),  EXP=inp5)
     
     
