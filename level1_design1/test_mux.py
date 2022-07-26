@@ -18,8 +18,8 @@ async def test_mux(dut):
     #dut.inp1.value = 1
     #dut.inp2.value = 2
     #dut.inp3.value = 3
-    dut.inp4.value = 0
-    #dut.inp5.value = 1
+    #dut.inp4.value = 0
+    dut.inp5.value = 1
     #dut.inp6.value = 2
     #dut.inp7.value = 3
     #dut.inp8.value = 0
@@ -46,12 +46,12 @@ async def test_mux(dut):
     #dut.inp29.value = 1
     #dut.inp30.value = 2
     
-    A = dut.inp4.value
-    B = dut.out.value
+    # B = dut.out.value
     await Timer(2, units='ns')
 
-    assert dut.out.value == 0, f"Mux result is incorrect: {dut.out.value} != {0}".format(
-            B = int(dut.out.value), A = int(dut.inp4.value),  EXP=inp4)
+    assert dut.out.value == 1, f"Mux result is incorrect: {dut.out.value} != {1}"
+    #.format(
+    #        B = int(dut.out.value), A = int(dut.inp4.value),  EXP=inp4)
     
     
 
