@@ -11,13 +11,13 @@ async def test_mux(dut):
     cocotb.log.info('##### CTB: Develop your test here ########')
     sel1=1
     #for i in range(4):
-    dut.sel.value = 2
+    dut.sel.value = 3
     await Timer(2, units='ns')
     #dut.inp0.value = 0
     #await Timer(2, units='ns')
     #dut.inp1.value = 1
-    dut.inp2.value = 2
-    #dut.inp3.value = 3
+    #dut.inp2.value = 2
+    dut.inp3.value = 3
     #dut.inp4.value = 0
     #dut.inp5.value = 1
     #dut.inp6.value = 2
@@ -49,7 +49,7 @@ async def test_mux(dut):
 
     await Timer(2, units='ns')
 
-    assert dut.out.value == 2, f"Mux result is incorrect: {dut.out.value} != 2"
+    assert dut.out.value == 3, f"Mux result is incorrect: {dut.out.value} != 3"
     print("tested the code for single  select value at a time");
 
     
