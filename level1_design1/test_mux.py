@@ -51,7 +51,7 @@ async def test_mux(dut):
 
     assert dut.out.value == 0, f"Mux result is incorrect: {dut.out.value} != 0"
     print("tested the code for single  select value at a time");
-    print("out = %d,inp4 = %d",out,inp4);
+    print("out = %d,inp4 = %d",dut.out.value,dut.inp4.value);
 
     
     
