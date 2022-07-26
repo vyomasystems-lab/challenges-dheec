@@ -52,6 +52,7 @@ async def test_mux(dut):
 
     assert dut.out.value == 2, f"Mux result is incorrect: {dut.out.value} != {2}".format(
             A=int(dut.inp6.value), B=int(dut.out.value),  EXP=inp6)
+    print("inp6 : %3d, out : %2d, sel : %5d" % (2,2,6))
     
     
     
