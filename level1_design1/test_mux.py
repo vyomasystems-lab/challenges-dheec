@@ -21,7 +21,7 @@ async def test_mux(dut):
     #dut.inp0.value = 03;
     #dut.inp0.value = 00;
 
-    await Timer(1, units='ns')
+    await Timer(2, units='ns')
 
     assert dut.out.value == (1 or 0), f"Mux result is incorrect: {dut.out.value} != (1 or 0)"
     print("tested the code for 2 select values");
