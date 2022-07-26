@@ -49,9 +49,10 @@ async def test_mux(dut):
 
     await Timer(2, units='ns')
 
-    assert dut.out.value == 0, f"Mux result is incorrect: {dut.out.value} != 0"
-    print("tested the code for single  select value at a time");
-    print("out = %d,inp4 = %d",dut.out.value,dut.inp4.value);
+    assert dut.out.value == inp4, f"Mux result is incorrect: {dut.out.value} != {inp4}".format(
+            int(dut.out.value), int(dut.inp4.value), OUT=int(dut.out.value), EXP=inp4)
+    
+    
 
     
     
