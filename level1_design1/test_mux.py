@@ -10,20 +10,46 @@ async def test_mux(dut):
 
     cocotb.log.info('##### CTB: Develop your test here ########')
     sel1=1
-    for i in range(4):
-        dut.sel.value = ~sel1
-        await Timer(2, units='ns')
-        dut.inp0.value = 0
-        await Timer(2, units='ns')
-        dut.inp1.value = 1
-        await Timer(2, units='ns')
-    #dut.inp0.value = 02;
-    #dut.inp0.value = 03;
-    #dut.inp0.value = 00;
+    #for i in range(4):
+    dut.sel.value = 00000
+    await Timer(2, units='ns')
+    dut.inp0.value = 0
+    await Timer(2, units='ns')
+    #dut.inp1.value = 1
+    #dut.inp2.value = 2;
+    #dut.inp3.value = 3;
+    #dut.inp4.value = 0;
+    #dut.inp5.value = 1
+    #dut.inp6.value = 2;
+    #dut.inp7.value = 3;
+    #dut.inp8.value = 0;
+    #dut.inp9.value = 1
+    #dut.inp10.value = 2;
+    #dut.inp11.value = 3;
+    #dut.inp12.value = 0;
+    #dut.inp13.value = 1
+    #dut.inp14.value = 2;
+    #dut.inp15.value = 3;
+    #dut.inp16.value = 0;
+    #dut.inp17.value = 1
+    #dut.inp18.value = 2;
+    #dut.inp19.value = 3;
+    #dut.inp20.value = 0;
+    #dut.inp21.value = 1
+    #dut.inp22.value = 2;
+    #dut.inp23.value = 3;
+    #dut.inp24.value = 0;
+    #dut.inp25.value = 1
+    #dut.inp26.value = 2;
+    #dut.inp27.value = 3;
+    #dut.inp28.value = 0;
+    #dut.inp29.value = 1
+    #dut.inp30.value = 2;
+    
 
     await Timer(2, units='ns')
 
-    assert dut.out.value == (1 or 0), f"Mux result is incorrect: {dut.out.value} != (1 or 0)"
+    assert dut.out.value == (0), f"Mux result is incorrect: {dut.out.value} != (0)"
     print("tested the code for 2 select values");
 
     
