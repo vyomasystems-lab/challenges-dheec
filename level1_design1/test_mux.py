@@ -11,7 +11,7 @@ async def test_mux(dut):
     cocotb.log.info('##### CTB: Develop your test here ########')
     sel1=1
     #for i in range(4):
-    dut.sel.value = 4
+    dut.sel.value = 5
     await Timer(2, units='ns')
     #dut.inp0.value = 0
     #await Timer(2, units='ns')
