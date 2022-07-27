@@ -47,63 +47,63 @@ async def test_mux(dut):
     await Timer(2, units='ns')
     if dut.sel.value == 0:
         tmp = dut.inp0.value 
-    elif sel == 1:
+    elif dut.sel.value == 1:
         tmp = dut.inp1.value 
-    elif sel == 2:
+    elif dut.sel.value == 2:
         tmp = dut.inp2.value
-    elif sel == 3:
+    elif dut.sel.value == 3:
         tmp = dut.inp3.value 
-    elif sel == 4:
+    elif dut.sel.value == 4:
         tmp = dut.inp4.value
-    elif sel == 5:
+    elif dut.sel.value == 5:
         tmp = dut.inp5.value 
-    elif sel == 6:
+    elif dut.sel.value == 6:
         tmp = dut.inp6.value
-    elif sel == 7:
+    elif dut.sel.value == 7:
         tmp = dut.inp7.value 
-    elif sel == 8:
+    elif dut.sel.value == 8:
         tmp = dut.inp8.value
-    elif sel == 9:
+    elif dut.sel.value == 9:
         tmp = dut.inp9.value 
-    elif sel == 10:
+    elif dut.sel.value == 10:
         tmp = dut.inp10.value
-    elif sel == 11:
+    elif dut.sel.value == 11:
         tmp = dut.inp11.value 
-    elif sel == 12:
+    elif dut.sel.value == 12:
         tmp = dut.inp12.value
-    elif sel == 13:
+    elif dut.sel.value == 13:
         tmp = dut.inp13.value 
-    elif sel == 14:
+    elif dut.sel.value == 14:
         tmp = dut.inp14.value
-    elif sel == 15:
+    elif dut.sel.value == 15:
         tmp = dut.inp15.value 
-    elif sel == 16:
+    elif dut.sel.value == 16:
         tmp = dut.inp17.value
-    elif sel == 18:
+    elif dut.sel.value == 18:
         tmp = dut.inp18.value 
-    elif sel == 19:
+    elif dut.sel.value == 19:
         tmp = dut.inp19.value
-    elif sel == 20:
+    elif dut.sel.value == 20:
         tmp = dut.inp20.value 
-    elif sel == 21:
+    elif dut.sel.value == 21:
         tmp = dut.inp21.value
-    elif sel == 22:
+    elif dut.sel.value == 22:
         tmp = dut.inp22.value 
-    elif sel == 23:
+    elif dut.sel.value == 23:
         tmp = dut.inp13.value
-    elif sel == 24:
+    elif dut.sel.value == 24:
         tmp = dut.inp24.value 
-    elif sel == 25:
+    elif dut.sel.value == 25:
         tmp = dut.inp25.value
-    elif sel == 26:
+    elif dut.sel.value == 26:
         tmp = dut.inp26.value 
-    elif sel == 27:
+    elif dut.sel.value == 27:
         tmp = dut.inp27.value
-    elif sel == 28:
+    elif dut.sel.value == 28:
         tmp = dut.inp28.value 
-    elif sel == 29:
+    elif dut.sel.value == 29:
         tmp = dut.inp29.value
-    elif sel == 30:
+    elif dut.sel.value == 30:
         tmp = dut.inp30.value 
     
     dut.out.value = tmp; 
