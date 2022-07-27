@@ -41,6 +41,7 @@ async def test_mux(dut):
     inp29 = 1
     inp30 = 2
     
+    dut.tmp.value = 0
     
     #for i in range(4):
     dut.sel.value = 30
