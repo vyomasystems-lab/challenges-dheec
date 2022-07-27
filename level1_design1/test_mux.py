@@ -75,15 +75,14 @@ async def test_mux(dut):
           dut.inp29.value = 0
     elif dut.sel.value == 30:
           dut.inp30.value = 1
-          tmp = dut.inp30.value
-    
+          
     
     
     
     await Timer(2, units='ns')
 
-    assert dut.out.value == tmp, f"Mux result is incorrect: {dut.out.value} != {tmp}"
-    print("                      tmp : %d, out : %d, sel : %d" % (dut.tmp.value,dut.out.value,dut.sel.value))
+    assert dut.out.value == inp30, f"Mux result is incorrect: {dut.out.value} != {inp30}"
+    print("                      inp30 : %d, out : %d, sel : %d" % (dut.inp30.value,dut.out.value,dut.sel.value))
     
     
     
