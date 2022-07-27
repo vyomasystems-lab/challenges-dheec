@@ -13,7 +13,7 @@ async def test_mux(dut):
     
     
     #for i in range(4):
-    dut.sel.value = 6
+    dut.sel.value = 7
     await Timer(2, units='ns')
     if dut.sel.value == 0:
          dut.inp0.value = 0
