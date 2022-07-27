@@ -75,7 +75,7 @@ async def test_mux(dut):
           dut.inp29.value = 0
     elif dut.sel.value == 30:
           dut.inp30.value = 1
-          dut.tmp.value = dut.inp30.value
+          tmp = dut.inp30.value
     
     
     
