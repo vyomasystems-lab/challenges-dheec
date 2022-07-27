@@ -76,7 +76,7 @@ async def test_mux(dut):
     elif dut.sel.value == 30:
           dut.inp30.value = dut.tmp.value 
     
-    dut.out.value = dut.tmp.value ; 
+    dut.out.value = dut.tmp.value  
     
     
     await Timer(2, units='ns')
