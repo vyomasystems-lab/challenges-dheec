@@ -13,7 +13,7 @@ async def test_mux(dut):
     
     
     #for i in range(4):
-    dut.sel.value = 3
+    dut.sel.value = 4
     await Timer(2, units='ns')
     if dut.sel.value == 0:
          dut.inp0.value = 0
@@ -81,8 +81,8 @@ async def test_mux(dut):
     
     await Timer(2, units='ns')
 
-    assert dut.out.value == dut.inp3.value, f"Mux result is incorrect: {dut.out.value} != {dut.inp3.value}"
-    print("                      inp3 : %d, out : %d, sel : %d" % (dut.inp3.value,dut.out.value,dut.sel.value))
+    assert dut.out.value == dut.inp4.value, f"Mux result is incorrect: {dut.out.value} != {dut.inp4.value}"
+    print("                      inp4 : %d, out : %d, sel : %d" % (dut.inp4.value,dut.out.value,dut.sel.value))
     
     
     
