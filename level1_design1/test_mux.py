@@ -9,40 +9,9 @@ async def test_mux(dut):
     """Test for mux2"""
 
     cocotb.log.info('##### CTB: Develop your test here ########')
-    inp0 = 0
-    inp1 = 1
-    inp2 = 2
-    inp3 = 3
-    inp4 = 0
-    inp5 = 1
-    inp6 = 2
-    inp7 = 3
-    inp8 = 0
-    inp9 = 1
-    inp10 = 2
-    inp11 = 3
-    inp12 = 0
-    inp13 = 1
-    inp14 = 2
-    inp15 = 3
-    inp16 = 0
-    inp17 = 1
-    inp18 = 2
-    inp19 = 3
-    inp20 = 0
-    inp21 = 1
-    inp22 = 2
-    inp23 = 3
-    inp24 = 0
-    inp25 = 1
-    inp26 = 2
-    inp27 = 3
-    inp28 = 0
-    inp29 = 1
-    inp30 = 2
+        
     
-    
-    dut.tmp.value = 1
+    tmp = 1
     #for i in range(4):
     dut.sel.value = 30
     await Timer(2, units='ns')
