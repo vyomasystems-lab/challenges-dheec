@@ -50,7 +50,7 @@ async def test_mux(dut):
     await Timer(2, units='ns')
 
     assert dut.out.value == dut.inp6.value, f"Mux result is incorrect: {dut.out.value} != {dut.inp6.value}"
-    print("inp6 : %d, out : %d, sel : %d" % (dut.inp6.value,dut.out.value,dut.sel.value))
+    print("        inp6 : %d, out : %d, sel : %d" % (dut.inp6.value,dut.out.value,dut.sel.value))
     
     
     
