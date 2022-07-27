@@ -45,7 +45,7 @@ async def test_mux(dut):
     #for i in range(4):
     dut.sel.value = 30
     await Timer(2, units='ns')
-    if sel == 0:
+    if dut.sel.value == 0:
         tmp = dut.inp0.value 
     elif sel == 1:
         tmp = dut.inp1.value 
