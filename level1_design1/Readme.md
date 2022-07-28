@@ -7,5 +7,14 @@ Output mismatches for the above inputs proving that there is a design bug
 Design Bug
 Based on the above test input and analysing the design, we see the following
 
- For 5 bit 'select' lines there should be 32 input lines.
+Test Scenario 
+Test Inputs: sel = 31
+Expected Output: out = inp31
+Observed Output in the DUT dut.out= NULL
+Error:mux contains no object named inp31
+Output mismatches for the above inputs proving that there is a design bug
+
+Design Bug
+Based on the above test input and analysing the design, we see the following
+For 5 bit 'select' lines there should be 32 input lines.
 
