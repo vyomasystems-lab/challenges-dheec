@@ -24,3 +24,7 @@ async def test_seq_bug1(dut):
     await FallingEdge(dut.clk)
 
     cocotb.log.info('#### CTB: Develop your test here! ######')
+
+    for i in range (6):
+        inp_bit = random.randint(0, 1)
+        print("inp_bit = %d",inp_bit)
