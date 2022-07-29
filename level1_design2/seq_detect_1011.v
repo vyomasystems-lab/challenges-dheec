@@ -70,5 +70,5 @@ module seq_detect_1011(seq_seen, inp_bit, reset, clk);
       end
     endcase
   end
-  print("next_state = %s" % next_state)
+  
 endmodule
