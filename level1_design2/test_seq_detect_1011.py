@@ -28,5 +28,5 @@ async def test_seq_bug1(dut):
     for i in range (50):
         inp_bit = random.randint(0, 1)
         print("inp_bit = %d" % inp_bit)
-        print("seq_seen = %d"%dut.seq_seen.value)
+        print("seq_seen = %d,A = %d" % dut.seq_seen.value,dut.A.value)
     
