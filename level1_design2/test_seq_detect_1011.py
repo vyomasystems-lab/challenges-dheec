@@ -25,8 +25,8 @@ async def test_seq_bug1(dut):
 
     cocotb.log.info('#### CTB: Develop your test here! ######')
 
-    for i in range (5):
+    for i in range (10):
         inp_bit = random.randint(0, 1)
         print("inp_bit = %d" % inp_bit)
-    print("seq_seen = %d"%dut.seq_seen.value)
-    #assert dut.seq_seen.value == A+B, 
+        print("seq_seen = %d"%dut.seq_seen.value)
+    
