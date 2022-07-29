@@ -28,4 +28,5 @@ async def test_seq_bug1(dut):
     for i in range (5):
         inp_bit = random.randint(0, 1)
         print("inp_bit = %d" % inp_bit)
-    #print("seq_seen = %d" % seq_seen)
+    print("seq_seen = %d"%dut.seq_seen.value)
+    #assert dut.seq_seen.value == A+B, 
