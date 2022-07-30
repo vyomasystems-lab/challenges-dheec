@@ -30,7 +30,7 @@ async def test_seq_bug1(dut):
     #    print("inp_bit = %d" % inp_bit)
     #    print("seq_seen = %d" % dut.seq_seen.value)
     inp_bit = 1
-    inp_bit = 0
+    inp_bit = 1
     inp_bit = 1
     inp_bit = 1
     print("seq_seen = %d" % dut.seq_seen.value)
