@@ -116,10 +116,10 @@ module seq_detect_1011(seq_seen, inp_bit, reset, clk);
       begin
         if(inp_bit == 1)
           next_state = SEQ_10;
-          seq_seen = 0;
+          
         else
           next_state = SEQ_1;
-          seq_seen = 0;
+          
       end
       SEQ_10:
       begin
@@ -142,6 +142,7 @@ module seq_detect_1011(seq_seen, inp_bit, reset, clk);
           seq_seen = 1;
         else
           next_state = SEQ_101;
+          seq_seen = 0;
       end
     endcase
   end
