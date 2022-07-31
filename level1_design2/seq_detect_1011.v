@@ -76,7 +76,7 @@
 
 module seq_detect_1011(seq_seen, inp_bit, reset, clk);
 
-  output reg seq_seen;
+  output wire seq_seen;
   input inp_bit;
   input reset;
   input clk;
